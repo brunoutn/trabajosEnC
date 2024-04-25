@@ -10,7 +10,7 @@ int main(void) {
     printf("Ingrese cuanto gana: ");
     scanf("%d", &ingresos);
 
-    if (edad >= edadMinima && ingresos >= ingresosMinimos) {
+    if (edad > edadMinima && ingresos >= ingresosMinimos) {
         printf("Tributa.");
         return 0;
     }
