@@ -123,8 +123,7 @@ void ingresoCantidad(float *longiPez, short int *cantPez, unsigned char *pescMax
 
 char calcularGanadorPorCantidad(short int *cant1, short int *cant2, short int *cant3)
 {
-    unsigned char resultadoGanador;
-    short int pezMaxCant = 0;
+    unsigned char resultadoGanador = '0';
 
     // 1,2,3 - 1,3,2 - 2,1,3 - 2,3,1 - 3,2,1 - 3,1,2 - 1,1,1
 
@@ -143,5 +142,5 @@ char calcularGanadorPorCantidad(short int *cant1, short int *cant2, short int *c
         resultadoGanador = '2';
     }
 
-    return '3';
+    return resultadoGanador == '0' ? '3' : resultadoGanador;
 }
