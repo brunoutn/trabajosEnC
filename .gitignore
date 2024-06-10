@@ -1,4 +1,5 @@
 *.exe
 .idea
 *.txt
+launch.json
 cmake-build-debug
