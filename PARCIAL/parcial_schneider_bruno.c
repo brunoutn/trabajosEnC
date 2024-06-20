@@ -12,7 +12,7 @@ int encontrarMenosConcurrida(int, int, int);
 int main(void)
 {
     int op, totalAsistentes, areaConcurrida = 0;
-    int aula, biblioteca, laboratorio = 0;
+    int aula = 0, biblioteca = 0, laboratorio = 0;
     do
     {
         op = menu();
